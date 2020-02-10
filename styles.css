@@ -15,16 +15,7 @@ body {
 
 
 
-@keyframes rotation {
-    from {
-      transform: rotate3d(0, 0, -1, 0deg)
-    }
-    to {
-      transform: rotate3d(0, 1, 0, 359deg);
-    }
-  }
-
-div#construction-wrapper > h1, div#construction-wrapper > h2 {
+div#construction-wrapper > h1, div#construction-wrapper > h2, h3 {
     font-family: monospace;
     color: white;
     text-align: center;
@@ -49,6 +40,17 @@ div#construction-wrapper > h1, div#construction-wrapper > h2 {
         margin: 0 auto 20px auto;
         animation: rotation 2s infinite linear;
     }
+
+    h3 {
+      margin: 20px 0;
+      font-size: 35px;
+    }
+    input {
+      display: block;
+      margin: 0 auto;
+      font-family: monospace;
+      font-size: 50px;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -71,4 +73,25 @@ div#construction-wrapper > h1, div#construction-wrapper > h2 {
         margin: 0 auto 20px auto;
         animation: rotation 2s infinite linear;
     }
+    h3 {
+      font-size: 20px;
+    }
+    input {
+      display: block;
+      margin: 0 auto;
+      font-family: monospace;
+      font-size: 30px;
+    }
 }
+
+
+
+@keyframes rotation {
+  from {
+    transform: rotate3d(0, 0, -1, 0deg)
+  }
+  to {
+    transform: rotate3d(0, 1, 0, 359deg);
+  }
+}
+ /* PASSWORD: CODINGCOUGS2020 */
