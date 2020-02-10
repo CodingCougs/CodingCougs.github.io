@@ -13,13 +13,7 @@ body {
     transform: translate(-50%, -50%);
 }
 
-#cc-logo {
-    width: 30%;
-    height: 30%;
-    display: block;
-    margin: 0 auto 20px auto;
-    animation: rotation 2s infinite linear;
-}
+
 
 @keyframes rotation {
     from {
@@ -36,14 +30,45 @@ div#construction-wrapper > h1, div#construction-wrapper > h2 {
     text-align: center;
 }
 
-h1 {
-    font-size: 45px;
-    width: 100%;
-    margin-bottom: 10px;
-    white-space: nowrap;
+@media only screen and (min-width: 600px) {
+    h1 {
+        font-size: 60px;
+        width: 100%;
+        margin-bottom: 10px;
+        white-space: nowrap;
+    }
+    
+    h2 {
+        margin-top: 10px;
+        font-size: 45px;
+    }
+    #cc-logo {
+        width: 40%;
+        height: 40%;
+        display: block;
+        margin: 0 auto 20px auto;
+        animation: rotation 2s infinite linear;
+    }
 }
 
-h2 {
-    margin-top: 10px;
-    font-size: 30px;
+@media only screen and (min-width: 1200px) {
+    h1 {
+        font-size: 45px;
+        width: 100%;
+        margin-bottom: 10px;
+        white-space: nowrap;
+    }
+    
+    h2 {
+        margin-top: 10px;
+        font-size: 30px;
+    }
+
+    #cc-logo {
+        width: 30%;
+        height: 30%;
+        display: block;
+        margin: 0 auto 20px auto;
+        animation: rotation 2s infinite linear;
+    }
 }
