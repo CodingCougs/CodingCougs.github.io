@@ -11,7 +11,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;    
 }
 
 #cc-logo {
@@ -39,8 +38,12 @@ div#construction-wrapper > h1, div#construction-wrapper > h2 {
 
 h1 {
     font-size: 45px;
+    width: 100%;
+    margin-bottom: 10px;
+    white-space: nowrap;
 }
 
 h2 {
+    margin-top: 10px;
     font-size: 30px;
 }
