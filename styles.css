@@ -2,96 +2,194 @@
     margin: 0;
     padding: 0;
 }
+
 body {
-    background-color: #981e32;
+  height: 100%;
+  width: 100%;
+  
 }
 
-#construction-wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+body {
+
+}
+#nav-bar {
+  height: auto;
+  background: white;
 }
 
-
-
-div#construction-wrapper > h1, div#construction-wrapper > h2, h3 {
-    font-family: monospace;
-    color: white;
-    text-align: center;
+div#nav-bar div a {
+  color: #111111;
+  padding: 1.5rem;
+  display: inline-block;
+  /* margin: 0 0.25rem; */
+  font-size: 1rem;
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500; 
 }
 
-@media only screen and (min-width: 600px) {
-    h1 {
-        font-size: 60px;
-        width: 100%;
-        margin-bottom: 10px;
-        white-space: nowrap;
-    }
-    
-    h2 {
-        margin-top: 10px;
-        font-size: 45px;
-    }
-    #cc-logo {
-        width: 40%;
-        height: 40%;
-        display: block;
-        margin: 0 auto 20px auto;
-        animation: rotation 2s infinite linear;
-    }
-
-    h3 {
-      margin: 20px 0;
-      font-size: 35px;
-    }
-    input {
-      display: block;
-      margin: 0 auto;
-      font-family: monospace;
-      font-size: 50px;
-    }
+.inner-nav-bar-wrapper {
+  /* margin: 0 0.25rem; */
+  display: flex;
+  justify-content: center;
 }
 
-@media only screen and (min-width: 1200px) {
-    h1 {
-        font-size: 45px;
-        width: 100%;
-        margin-bottom: 10px;
-        white-space: nowrap;
-    }
-    
-    h2 {
-        margin-top: 10px;
-        font-size: 30px;
-    }
-
-    #cc-logo {
-        width: 30%;
-        height: 30%;
-        display: block;
-        margin: 0 auto 20px auto;
-        animation: rotation 2s infinite linear;
-    }
-    h3 {
-      font-size: 20px;
-    }
-    input {
-      display: block;
-      margin: 0 auto;
-      font-family: monospace;
-      font-size: 30px;
-    }
+div#nav-bar div button {
+  float: right;
+  margin: 1.5rem;  
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500; 
+  color: white;
+  border: none;
+  background-color: #981e32;
+  padding: 1rem;
+  border-radius: 2px;
+}
+div#nav-bar div a:hover {
+  cursor: pointer;
+  background-color: #f1f1f1;
 }
 
-
-
-@keyframes rotation {
-  from {
-    transform: rotate3d(0, 0, -1, 0deg)
-  }
-  to {
-    transform: rotate3d(0, 1, 0, 359deg);
-  }
+#header-bar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+  height: 5rem;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
 }
- /* PASSWORD: CODINGCOUGS2020 */
+
+a {
+  color: #111111;
+  padding: 1.5rem;
+  display: inline-block;
+  /* margin: 0 0.25rem; */
+  font-size: 1rem;
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500; 
+  user-select: none;
+}
+
+a:hover {
+  cursor: pointer;
+  background-color: #f1f1f1;
+}
+
+button {
+  float: right;
+  margin: 1.5rem 1.5rem 1.5rem auto;  
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500; 
+  color: white;
+  border: none;
+  background-color: #981e32;
+  padding: 0.75rem;
+  border-radius: 2px;
+  user-select: none
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#landing-page-img {
+  width: 100%;
+  height: 70rem;
+  background-color: #f1f1f1;
+}
+
+.image {
+  width: 100%;
+  height: 70rem;
+  object-fit: cover;
+
+}
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  margin: 10rem 0 2.5rem 0;
+}
+
+p.sub {
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  font-style: italic;
+}
+
+div#header-bar img {
+  height: 52px;
+  width: 52px;
+  
+  margin: 1.5rem auto 1.5rem 1.5rem;
+}
+
+img.image {
+  clear: both;
+}
+
+.dummy-text-container {
+  margin: 10rem auto 5rem auto;
+  width: 30%;
+}
+
+.dummy-text {
+ 
+  font-family: 'Rubik', sans-serif;
+  font-size: 26px;
+  color: #676767;
+  font-weight: 300;
+}
+
+.fake-cite {
+  font-family: 'Rubik', sans-serif;
+  font-size: 26px;
+  color: #676767;
+  font-weight: 300;
+  text-align: right;
+}
+
+.code-wrapper {
+  margin: 10rem auto 10rem auto;
+  width: 100%;
+}
+
+.code-container {
+  background-color: #f1f1f1;
+  border-radius: 2px;
+}
+
+.code {
+  text-align: center;
+  padding: 1rem;
+  color: gray;
+  font-family: monospace;
+  font-size: 1.5rem;
+}
+
+.flavor-img {
+  width: 30%;
+  display: block;
+  margin: 0 auto 2.5rem auto;
+}
+
+.flavor-text {
+  font-family: 'Rubik', sans-serif;
+  font-size: 26px;
+  color: black;
+  font-weight: 500;
+  text-align: center;
+  margin: 2.5rem 0 2.5rem 0;
+}

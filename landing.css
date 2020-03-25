@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#cc-logo {
+  width: 5%;
+  height: 5%;
+  padding: 1rem 1rem 0rem 1rem;
+}
+
+body {
+  /* background-color: #981e32; */
+  /* color: white; */
+}
+a {
+  font-family: monospace;
+  text-decoration: none;
+  display: inline;
+  font-size: 2rem;
+  padding: 1em ;
+  margin-top: 0;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+#header-img {
+  display: block;
+  margin: 1.5rem auto 0 auto;
+  /* object-fit: cover; */
+  /* width: 100%; */
+  /* height: 600px; */
+}
+
+.header-img-container {
+  background-color: #eee;
+}
+
+h1 {
+  font-family: monospace;
+  text-align: center;
+  font-size: 2.5rem;
+  padding-top: 3rem;
+}
+
+p {
+  font-family: monospace;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.landing-content {
+  background-color: white;
+  /* color: #444; */
+}
